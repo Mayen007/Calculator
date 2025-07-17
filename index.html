@@ -14,34 +14,35 @@
       <p class="display-el"></p>
       <div class="calculator">
         <div>
-          <button onclick="appendValue('1')">1</button>
-          <button onclick="appendValue('2')">2</button>
-          <button onclick="appendValue('3')">3</button>
-          <button class="orange-bg" onclick="appendOperator('+')">+</button>
+          <button data-value="1">1</button>
+          <button data-value="2">2</button>
+          <button data-value="3">3</button>
+          <button data-operator="+" class="orange-bg">+</button>
         </div>
         <div>
-          <button onclick="appendValue('4')">4</button>
-          <button onclick="appendValue('5')">5</button>
-          <button onclick="appendValue('6')">6</button>
-          <button class="orange-bg" onclick="appendOperator('-')">-</button>
+          <button data-value="4">4</button>
+          <button data-value="5">5</button>
+          <button data-value="6">6</button>
+          <button data-operator="-" class="orange-bg">-</button>
         </div>
         <div>
-          <button onclick="appendValue('7')">7</button>
-          <button onclick="appendValue('8')">8</button>
-          <button onclick="appendValue('9')">9</button>
-          <button onclick="appendOperator('*')" class="orange-bg">*</button>
+          <button data-value="7">7</button>
+          <button data-value="8">8</button>
+          <button data-value="9">9</button>
+          <button data-operator="*" class="orange-bg">*</button>
         </div>
         <div>
-          <button onclick="appendValue('0')">0</button>
-          <button onclick="appendValue('.')">.</button>
-          <button onclick="calculate()">=</button>
-          <button onclick="appendOperator('/')" class="orange-bg">/</button>
+          <button data-value="0">0</button>
+          <button data-value=".">.</button>
+          <button id="equals">=</button>
+          <button data-operator="/" class="orange-bg">/</button>
         </div>
         <div>
-          <button class="grey-button" onclick="del()">Del</button>
-          <button class="grey-button" onclick="clearDisplay()">clear</button>
+          <button id="del" class="grey-button">Del</button>
+          <button id="clear" class="grey-button">clear</button>
         </div>
       </div>
+    </div>
   </main>
 
   <script src="./script.js"></script>

@@ -6,11 +6,17 @@
 body {
   font-family: Arial, sans-serif;
   font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
 }
 
 .container {
   background-color: black;
   max-width: 290px;
+  width: 100%;
   margin: auto;
   border: 2px solid rgb(92, 93, 92);
   border-radius: 10px;
@@ -27,6 +33,16 @@ body {
   background-color: #eee;
 }
 
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.calculator div {
+  display: contents;
+}
+
 .calculator div button {
   background-color: rgb(51, 51, 51);
   width: 60px;
@@ -39,7 +55,8 @@ body {
   margin-top: 8pt;
   font-size: 26px;
 }
-.calculator div button:hover{
+
+.calculator div button:hover {
   background-color: rgb(64, 64, 64);
 }
 
